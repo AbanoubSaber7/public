@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Calculations</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Website Logo" id="logo">
+        <h1>Geometric Calculations</h1>
+        <nav>
+            <ul>
+                <li><a href="#calculator"><i class="fas fa-calculator"></i> Calculator</a></li>
+                <li><a href="#instructions"><i class="fas fa-book"></i> Instructions</a></li>
+                <li><a href="#vision-mission"><i class="fas fa-eye"></i> Vision & Mission</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="calculator" class="main-section">
+            <h2><i class="fas fa-calculator"></i> Geometric Calculator</h2>
+            <form id="shape-form" class="calculator-form">
+                <div class="form-group">
+                    <label for="shape">Select Shape:</label>
+                    <select id="shape" name="shape" class="form-control">
+                        <option value="square">Square</option>
+                        <option value="rectangle">Rectangle</option>
+                        <option value="triangle">Triangle</option>
+                        <option value="circle">Circle</option>
+                        <option value="cube">Cube</option>
+                    </select>
+                </div>
+                <div id="inputs" class="input-group"></div>
+                <button type="button" id="calculate-btn" class="btn-primary">
+                    <i class="fas fa-equals"></i> Calculate
+                </button>
+            </form>
+            <div id="results" class="results-card"></div>
+        </section>
+
+        <section id="instructions" class="info-section">
+            <h2><i class="fas fa-book"></i> How to Use</h2>
+            <div class="instructions-grid">
+                <div class="instruction-card">
+                    <i class="fas fa-shapes"></i>
+                    <h3>1. Select Shape</h3>
+                    <p>Choose the geometric shape you want to calculate</p>
+                </div>
+                <div class="instruction-card">
+                    <i class="fas fa-ruler"></i>
+                    <h3>2. Enter Measurements</h3>
+                    <p>Input the required measurements for your selected shape</p>
+                </div>
+                <div class="instruction-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>3. Get Results</h3>
+                    <p>Click calculate to see the area, perimeter, or volume</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision-mission" class="info-section">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h2><i class="fas fa-eye"></i> Vision</h2>
+                    <p>To make geometry easy and accessible for everyone through interactive calculations.</p>
+                </div>
+                <div class="info-card">
+                    <h2><i class="fas fa-flag"></i> Mission</h2>
+                    <p>Provide a user-friendly platform for calculating areas, perimeters, and volumes of common geometric shapes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2><i class="fas fa-info-circle"></i> About the Developer</h2>
+            <div class="about-card">
+                <p>Developed by [ِAbanoub Saber - 22510531], a passionate Web Technologies student.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2><i class="fas fa-paper-plane"></i> Contact Us</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required 
+                           class="form-control" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" 
+                           class="form-control" placeholder="Enter your phone number">
+                </div>
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
